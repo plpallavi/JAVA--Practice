@@ -1,4 +1,3 @@
-
 //Properties
 // --> Variable Size
 // --> Non- contiguous Memory
@@ -75,7 +74,7 @@ public class linkedList {
     }
 
     // Delete last
-    public void deleteLaast() {
+    public void deleteLast() {
         if (head == null) {
             System.out.println("The list is empty");
             return;
@@ -99,6 +98,24 @@ public class linkedList {
         return size;
     }
 
+    public void reverseIterate() {
+        if (head == null || head.next == null) {
+            return;
+        }
+        Node prevNode = head;
+        Node currNode = head.next;
+        while (currNode != null) {
+            Node nextNode = currNode.next;
+            currNode.next = prevNode;
+
+            // update
+            prevNode = currNode;
+            currNode = nextNode;
+        }
+        head.next = null;
+        head = prevNode;
+    }
+
     public static void main(String[] args) {
         linkedList list = new linkedList();
         list.addFirst("a");
@@ -114,7 +131,7 @@ public class linkedList {
         list.deleteFirst();
         list.printList();
 
-        list.deleteLaast();
+        list.deleteLast();
         list.printList();
 
         System.out.println(list.getSize());
