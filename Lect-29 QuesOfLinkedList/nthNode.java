@@ -1,4 +1,8 @@
-import javax.swing.text.html.HTMLDocument.RunElement;
+
+// import javax.swing.text.html.HTMLDocument.RunElement;
+// import java.util.*;
+
+//TO find the nth node of a list
 
 public class nthNode {
 
