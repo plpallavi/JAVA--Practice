@@ -1,3 +1,4 @@
+// Palindrom using LinkedList
 //Palindrom : eg. POP, BOB, 121, 12321
 
 public class palindrom {
