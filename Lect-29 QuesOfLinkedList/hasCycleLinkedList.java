@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class hasCycleLinkedList {
     public boolean hasCycle(ListNode head) {
 
