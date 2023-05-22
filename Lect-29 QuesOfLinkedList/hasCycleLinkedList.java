@@ -1,4 +1,5 @@
 import java.util.*;
+// Finding a linked is in cycle or not
 
 public class hasCycleLinkedList {
     public boolean hasCycle(ListNode head) {
