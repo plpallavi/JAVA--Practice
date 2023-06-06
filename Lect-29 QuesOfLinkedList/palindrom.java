@@ -4,7 +4,7 @@
 public class palindrom {
     public ListNode reverse(ListNode head) {
         ListNode prev = null;
-        List curr = head;
+        ListNode curr = head;
 
         while (curr != null) {
             ListNode next = curr.next;
@@ -40,7 +40,7 @@ public class palindrom {
                 return false;
             }
 
-            firstHalfStart = firstHalfstart.next;
+            firstHalfStart = firstHalfStart.next;
             secondHalfStart = secondHalfStart.next;
         }
         return true;
