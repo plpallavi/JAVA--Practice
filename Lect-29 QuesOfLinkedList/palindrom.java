@@ -21,6 +21,8 @@ public class palindrom {
 
         while (hare.next != null && hare.next.next != null) {
             hare = hare.next.next;
+            turtle = turtle.next;
+
         }
 
         return turtle;
