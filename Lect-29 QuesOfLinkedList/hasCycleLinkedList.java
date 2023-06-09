@@ -8,10 +8,10 @@ public class hasCycleLinkedList {
             return false;
         }
         ListNode hare = head; // fast
-        ListNode tuttle = head; // slow
+        ListNode turtle = head; // slow
 
-        while (hare.next != null && hare.next != null) {
-            hare = hare.next.next.next;
+        while (hare != null && hare.next != null) {
+            hare = hare.next.next;
             turtle = turtle.next;
 
             if (hare == turtle) {
